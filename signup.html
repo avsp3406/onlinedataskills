@@ -35,6 +35,14 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
   const name = document.getElementById("name").value;
   const email = document.getElementById("email").value;
 
+  fetch(https://script.google.com/macros/s/AKfycbyV7_Qsshuieyr-L1ddYF1MCxdRmkVKlx7xlsHo3XXbBvUE2KpNQyrmKzvXX9hDruBfnQ/exec, {
+  method: "POST",
+  body: JSON.stringify({
+    name: name,
+    email: email
+  })
+});
+
   // Send GA4 signup event through GTM
   window.dataLayer = window.dataLayer || [];
   window.dataLayer.push({
