@@ -33,6 +33,14 @@ document.getElementById("signupForm").addEventListener("submit", function(e){
   e.preventDefault();
 
   const name = document.getElementById("name").value;
+  const email = document.getElementById("email").value;
+
+  // Send GA4 signup event through GTM
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({
+    event: "sign_up",
+    signup_method: "email"
+  });
 
   document.getElementById("msg").innerText =
     "Thanks for signing up, " + name + "!";
