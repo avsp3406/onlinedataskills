@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://avsp3406.github.io/onlinedataskills/sitemap.xml
